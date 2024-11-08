@@ -1,4 +1,4 @@
-const socket = io('ws://chatserver.malakayalauvergnat.com');
+const socket = io('wss://chatserver.malakayalauvergnat.com');
 const button = document.querySelector("button");
 
 socket.on('message', (message) => {

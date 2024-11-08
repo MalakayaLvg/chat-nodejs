@@ -12,7 +12,7 @@ const server = http.createServer((req,res) => {
 const io = socketIo(server, {
     transport: ["websocket","polling"],
     cors: {
-        origin: "https://chatclient.esdlyon.dev",
+        origin: "https://chatclient.malakayalauvergnat.com",
         methods: ["GET","POST"],
     }
 });

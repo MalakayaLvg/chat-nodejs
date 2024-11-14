@@ -1,40 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>chattyMcChat</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Title</title>
 </head>
-<body class="bg-dark text-dark">
+<body>
 
-<div class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+<ul></ul>
+<input type="text" placeholder="ton message">
+<button>Envoyer</button>
 
-    <h1 class="text-primary mb-4 fw-bold">chattyMcChat</h1>
-
-    <div class="card w-100 shadow-lg" style="max-width: 600px;">
-        <div class="card-header bg-primary text-white">
-            <h5 class="mb-0">Chat Room</h5>
-        </div>
-        <div class="card-body bg-white">
-
-            <ul class="list-group list-group-flush mb-3" id="message-list" style="max-height: 400px; overflow-y: auto;">
-
-            </ul>
-
-            <div class="input-group">
-                <input type="text" class="form-control border-primary" placeholder="Your message" aria-label="Your message" id="message-input">
-                <button class="btn btn-primary" id="send-button">Envoyer</button>
-            </div>
-        </div>
-        <div class="card-footer text-center bg-light text-muted small">
-            chattyMcChat - Pierre Nogaro
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.socket.io/4.8.0/socket.io.min.js" integrity="sha384-OoIbkvzsFFQAG88r+IqMAjyOtYDPGO0cqK5HF5Uosdy/zUEGySeAzytENMDynREd" crossorigin="anonymous"></script>
+<script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
 <script defer src="main.js"></script>
-
 </body>
 </html>

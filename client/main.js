@@ -17,6 +17,23 @@ socket.on('message', (message) => {
     document.querySelector('ul').appendChild(ligne)
 })
 
+socket.on('previousMessages', (message) =>{
+    message.forEach(message => {
+        const ligne = document.createElement('li')
+        ligne.innerHTML = `
+        <div class="d-flex mb-3">
+            <div class="me-3">
+                <div class="bg-secondary text-white rounded-pill px-3 py-2">
+                    ${message.content}
+                </div>
+                <small class="text-muted">${message.author} • 10:45 AM</small>
+            </div>
+        </div>
+        `
+        document.querySelector('ul').appendChild(ligne)
+    })
+})
+
 button.addEventListener('click', (e) => {
     const toSend = document.querySelector('input').value;
     socket.emit('message', {
